@@ -1,4 +1,4 @@
-# Designing a Parking Lot System - Low Level Design
+# Designing a Parking Lot System - (Low Level Design)
 
 ## Requirements
 1. The parking lot should have multiple levels, each level with a certain number of parking spots.
