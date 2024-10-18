@@ -1,23 +1,22 @@
-# Designing-a-Parking-Lot-System--Low-Level-Design
-Designing a Parking Lot System-(Low Level design)
-Requirements
+# Designing a Parking Lot System -Low Level Design
 
-The parking lot should consist of multiple levels, with each level containing a specified number of parking spots.
-The system must support various types of vehicles, including cars, motorcycles, and trucks.
-Each parking spot should be designated for a specific type of vehicle.
-Upon entry, the system should allocate a parking spot to the vehicle and release the spot when the vehicle exits.
-The system must track parking spot availability in real-time and provide this information to users.
-It should support multiple entry and exit points and handle concurrent access efficiently.
-Implementations
+## Requirements
+1. The parking lot should have multiple levels, each level with a certain number of parking spots.
+2. The parking lot should support different types of vehicles, such as cars, motorcycles, and trucks.
+3. Each parking spot should be able to accommodate a specific type of vehicle.
+4. The system should assign a parking spot to a vehicle upon entry and release it when the vehicle exits.
+5. The system should track the availability of parking spots and provide real-time information to customers.
+6. The system should handle multiple entry and exit points and support concurrent access.
 
-C++ Implementation
-Classes, Interfaces, and Enumerations
+## Implementations
+#### [C++ Implementation](../solutions/java/src/parkinglot/) 
 
-ParkingLot: Implements the Singleton pattern to ensure only one instance of the parking lot exists. It maintains a list of levels and provides methods for parking and unparking vehicles.
-Level: Represents a parking level, containing a list of parking spots. It handles parking and unparking of vehicles within the level.
-ParkingSpot: Represents an individual parking spot, tracking its availability and the parked vehicle.
-Vehicle: An abstract base class for different vehicle types, extended by specific classes like Car, Motorcycle, and Truck.
-VehicleType: An enumeration defining the different vehicle types supported in the parking lot.
-Multi-threading is implemented using synchronization techniques to ensure thread safety in critical sections.
-Main: Demonstrates the functionality of the parking lot system.
 
+## Classes, Interfaces and Enumerations
+1. The **ParkingLot** class follows the Singleton pattern to ensure only one instance of the parking lot exists. It maintains a list of levels and provides methods to park and unpark vehicles.
+2. The **Level** class represents a level in the parking lot and contains a list of parking spots. It handles parking and unparking of vehicles within the level.
+3. The **ParkingSpot** class represents an individual parking spot and tracks the availability and the parked vehicle.
+4. The **Vehicle** class is an abstract base class for different types of vehicles. It is extended by Car, Motorcycle, and Truck classes.
+5. The **VehicleType** enum defines the different types of vehicles supported by the parking lot.
+6. Multi-threading is achieved through the use of synchronized keyword on critical sections to ensure thread safety.
+7. The **Main** class demonstrates the usage of the parking lot system.
