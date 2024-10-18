@@ -9,17 +9,6 @@
 6. The system should handle multiple entry and exit points and support concurrent access.
 
 ## Implementations
-/parkinglot
-    ├── Level.java
-    ├── ParkingLot.java
-    ├── ParkingLotDemo.java
-    ├── ParkingSpot.java
-/vehicletype
-    ├── Car.java
-    ├── Motorcycle.java
-    ├── Truck.java
-    ├── Vehicle.java
-    └── VehicleType.java
 
 #### [C++ Implementation]
 **Overview**  
